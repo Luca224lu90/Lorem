@@ -1,0 +1,39 @@
+@import url(./navigation.css);
+
+@use * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: red;
+  --secondaryColor: yellow;
+  --highlight: blue;
+}
+
+body {
+  font-size: 1.3rem;
+}
+
+main {
+  background-color: var (--primaryColor);
+  color: var(--secondaryColor);
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+
+a hover {
+  color: var(--highlight);
+}
+p {
+  color: var(--highlight);
+
+  :hover {
+    color: var(--secondaryColor);
+  }
+}
